@@ -28,3 +28,13 @@ function init() {
     }
   })
 }
+
+function init() {
+  document.body.addEventListener('keydown', function(e) {
+    if (key === 'a') {
+        alert('You win!')
+      }
+    } else {
+      alert('You Lose!')
+    }
+  })
