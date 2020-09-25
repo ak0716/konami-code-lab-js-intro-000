@@ -11,7 +11,7 @@ document.body.addEventListener("keydown", (thingPressed) => {
   }
 
   else {
-    idx = 0
+    index = 0
   }
 
   console.log(index)
