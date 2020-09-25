@@ -16,7 +16,7 @@ function init() {
   const code = [38, 38, 40, 40, 37, 39, 37, 39, 'b', 'a']
   let index = 0
   document.body.addEventListener('keydown', function(e) {
-    const key = e.key
+    const key = e.keyCode
     if (key === code[index]) {
       index++;
       if (index === code.length) {
@@ -31,10 +31,8 @@ function init() {
 
 function init() {
   document.body.addEventListener('keydown', function(e) {
-    if (e === 'a') {
+    if (e.keycode === '38') {
         alert('You win!')
-      } else {
-        alert('You Lose!')
       }
     })
   }
