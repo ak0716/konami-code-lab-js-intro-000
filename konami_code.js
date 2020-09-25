@@ -19,7 +19,7 @@ function init() {
     const key = e.keyCode
     if (key === code[index]) {
       index++;
-      if (index === code.length) {
+      if (index === codes.length) {
         alert('Hurray')
         index = 0;
       }
