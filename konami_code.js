@@ -1,23 +1,20 @@
 const codes = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
+
+
 function init() {
-  let index = 0;
 
-document.body.addEventListener("keydown", (thingPressed) => {
-  const key = thingPressed.key
-  console.log(key)
-
-  if (codes[index] == key) {
-    ++index
-  }
-
-  else {
-    index = 0
-  }
-
-  console.log(index)
-  if (index == 10) {
-    alert("Hurray!");
-    index = 0
-  }
-});
+  let b = document.body;
+  let ind = 0;
+  b.addEventListener('keydown', function(e) {
+    e.stopPropagation();
+    let myKey = parseInt(e.detail || e.which);
+    if (myKey === code[ind]) {
+      ind++;
+      if (ind === (code.length)) {
+        alert("You did it! Konami!");
+      }
+    } else {
+      ind = 0;
+    }
+  })
 }
