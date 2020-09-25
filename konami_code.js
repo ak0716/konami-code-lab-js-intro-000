@@ -1,4 +1,4 @@
-const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
+const codes = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
 function init() {
   let index = 0;
 
@@ -19,5 +19,5 @@ document.body.addEventListener("keydown", (thingPressed) => {
     alert("Hurray!");
     index = 0
   }
-}); 
+});
 }
