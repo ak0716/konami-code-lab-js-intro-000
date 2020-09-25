@@ -13,7 +13,7 @@ const codes = [
 
 function init() {
   // your code here
-  const code = [38, 38, 40, 40, 37, 39, 37, 39, 'b', 'a']
+  const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
   let index = 0
   document.body.addEventListener('keydown', function(e) {
     const key = e.keyCode
@@ -28,11 +28,3 @@ function init() {
     }
   })
 }
-
-function init() {
-  document.body.addEventListener('keydown', function(e) {
-    if (e.keycode === '38') {
-        alert('You win!')
-      }
-    })
-  }
