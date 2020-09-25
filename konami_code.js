@@ -12,6 +12,7 @@ function init() {
       ind++;
       if (ind === (code.length)) {
         alert("Hurray");
+        true
       }
     } else {
       ind = 0;
