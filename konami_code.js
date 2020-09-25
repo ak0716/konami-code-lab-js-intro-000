@@ -31,10 +31,10 @@ function init() {
 
 function init() {
   document.body.addEventListener('keydown', function(e) {
-    if (key === 'a') {
+    if (e === 'a') {
         alert('You win!')
+      } else {
+        alert('You Lose!')
       }
-    } else {
-      alert('You Lose!')
-    }
-  })
+    })
+  }
