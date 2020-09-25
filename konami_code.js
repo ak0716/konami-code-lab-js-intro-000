@@ -1,23 +1,11 @@
-const codes = [
-  "ArrowUp",
-  "ArrowUp",
-  "ArrowDown",
-  "ArrowDown",
-  "ArrowLeft",
-  "ArrowRight",
-  "ArrowLeft",
-  "ArrowRight",
-  "b",
-  "a"
-];
+const codes = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
 
 function init() {
   // your code here
-  const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
   let index = 0
   document.body.addEventListener('keydown', function(e) {
     const key = e.keyCode
-    if (key === code[index]) {
+    if (key === codes[index]) {
       index++;
       if (index === codes.length) {
         alert('Hurray')
