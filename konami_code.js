@@ -12,7 +12,7 @@ function init() {
       ind++;
       if (ind === (code.length)) {
         alert("Hurray");
-        true
+        console.log('Hurray')
       }
     } else {
       ind = 0;
