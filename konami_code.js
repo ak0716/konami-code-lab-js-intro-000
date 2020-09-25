@@ -17,5 +17,3 @@ function init() {
     }
   }
 }
-
-init()
