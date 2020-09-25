@@ -11,7 +11,7 @@ function init() {
     if (myKey === code[ind]) {
       ind++;
       if (ind === (code.length)) {
-        alert("You did it! Konami!");
+        alert("Hurray");
       }
     } else {
       ind = 0;
